@@ -1,0 +1,111 @@
+@CHARSET "UTF-8";
+div {
+	border: 0px solid red;
+}
+
+#kuangjia {
+	width: 1700px;
+	margin-left: 100px;
+}
+
+#logo_1 {
+	float: left;
+	height: 90px;
+	width: 300px;
+	margin-left: 450px;
+	margin-top: -6px;
+	position: absolute;
+	z-index: 1;
+}
+
+#logo {
+	width: 1700px;
+	height: 110px;
+}
+
+#caidan {
+	width: 938px;
+	margin-left: 400px;
+	height: 50px;
+	background: #179bff;
+}
+
+#neirong {
+	margin-left: 400px;
+	width: 938px;
+	background-color: #DED9D9;
+}
+
+#lianjie {
+	margin-top: 10px;
+	margin-left: 400px;
+	width: 942px;
+	background-color: #DED9D9;
+}
+
+#fuwu {
+	height: 100px;
+}
+
+.logo_2 {
+	height: 100px;
+	width: 550px;
+	margin-left: 1000px;
+	margin-top: 30px;
+	padding-top: 10px
+}
+
+img {
+	border: 0;
+}
+
+#zhuce {
+	text-decoration: none;
+	width: 30px;
+	text-align: right;
+}
+
+#caidan a {
+	display: block;
+	float: left;
+	color: white;
+	height: 43px;
+	margin-top: -3px;
+	padding-top: 7px;
+	font-family: "Agency FB";
+	font-size: 25px;
+	text-decoration: none;
+	padding-left: 15px;
+}
+
+#caidan a:hover {
+	text-decoration: underline;
+	background-color: #96d2ff;
+}
+
+#lianjie a {
+	text-decoration: none;
+	margin-left: 20px;
+}
+
+#lianjie tr {
+	height: 30px;
+}
+
+#fuwu {
+	margin-top: 10px;
+}
+
+#tou {
+	font-size: 45px;
+	font-family: "Arial Black";
+	color: red;
+	padding-left: 300px;
+	height: 70px;
+	padding-left: 550px;
+	padding-top: 20px;
+}
+
+#lianjie td {
+	width: 126.5px;
+}
