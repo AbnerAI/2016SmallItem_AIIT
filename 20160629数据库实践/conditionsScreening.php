@@ -1,3 +1,8 @@
+<!--
+作者：nux_sphen@163.com
+时间：2016-07-03
+描述：目前简单的筛选一下，查询年龄不在19-22岁的学生姓名，并以表格形式输出
+-->
 <html>
 	<head>
 		<meta name="" charset="utf-8" content=""/>
@@ -39,7 +44,7 @@
 				$conn -> query("set names utf8");
 				//3 获得处理对象   $stmt大厨
 				$stmt = $conn -> stmt_init();
-				$sql = "select * from userList";
+				$sql = "select * from userList where mAge not between 19 and 22";
 				$stmt -> prepare($sql);
 				$stmt -> execute();
 				//7 绑定结果集
@@ -53,17 +58,13 @@
 					} else if ($sex == 1) {
 						echo '男';
 					}
-					echo "</td><td>$dept</td><td><a href='updateEmp.php?empId=$id'>修改</a> &nbsp;<a href='checkDelete.php?empId=$id'>删除</a></td></tr>";
+					echo "</td><td>$dept</td><td>None</td></tr>";
 				}
 				?>
 				<tr>
 					<td colspan="6" align="center">
-						<a href="addUser.php">
-							添加新员工
-						</a>
-						&nbsp;	&nbsp;
-						<a href="conditionsScreening.php">
-							条件筛选
+						<a href="index.php">
+							返回
 						</a>
 					</td>
 				</tr>

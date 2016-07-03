@@ -1,7 +1,7 @@
 /*
 Navicat MySQL Data Transfer
 
-Source Server         : EsLion
+Source Server         : abner
 Source Server Version : 50620
 Source Host           : localhost:3306
 Source Database       : work20160629
@@ -10,7 +10,7 @@ Target Server Type    : MYSQL
 Target Server Version : 50620
 File Encoding         : 65001
 
-Date: 2016-06-29 16:07:08
+Date: 2016-07-03 19:43:48
 */
 
 SET FOREIGN_KEY_CHECKS=0;
@@ -22,7 +22,7 @@ DROP TABLE IF EXISTS `userlist`;
 CREATE TABLE `userlist` (
   `mId` int(11) NOT NULL,
   `mName` varchar(255) DEFAULT NULL,
-  `mAge` int(11) DEFAULT NULL,
+  `mAge` varchar(255) DEFAULT NULL,
   `mSex` int(11) DEFAULT NULL,
   `mDept` varchar(255) DEFAULT NULL,
   PRIMARY KEY (`mId`)
@@ -31,6 +31,5 @@ CREATE TABLE `userlist` (
 -- ----------------------------
 -- Records of userlist
 -- ----------------------------
-INSERT INTO `userlist` VALUES ('2014003', '猫猫', '19', '1', '英语部门');
-INSERT INTO `userlist` VALUES ('2014006', '李明', '18', '1', '国务院');
-INSERT INTO `userlist` VALUES ('2014015', '猫猫', '20', '0', 'EngLish');
+INSERT INTO `userlist` VALUES ('2014002', '刘东ffds', '19', '1', '计算机科学部');
+INSERT INTO `userlist` VALUES ('2014003', '清华', '16', '0', '基础教学 ');
