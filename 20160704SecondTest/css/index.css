@@ -1,0 +1,64 @@
+* {
+	margin: 0px;
+	padding: 0px;
+}
+
+div {
+	border: 1px red solid;
+}
+
+#frame {
+	height: 600px;
+	width: 500px;
+	margin: 0 auto;
+}
+
+#header {
+	width: 500px;
+	height: 100px;
+}
+
+#content {
+	width: 500px;
+	height: 400px;
+}
+
+#contentState {
+	width: 500px;
+	height: 400px;
+}
+
+#bottom {
+	width: 500px;
+	height: 100px;
+}
+
+#header a {
+	line-height: 100px;
+	display: block;
+	float: left;
+	width: 83px;
+	background-color: saddlebrown;
+}
+
+#header a:hover {
+	background-color: seagreen;
+}
+
+#bottom a {
+	line-height: 100px;
+	display: block;
+	float: left;
+	width: 125px;
+	background-color: salmon;
+}
+
+#bottom a:hover {
+	background-color: #2E8B57;
+}
+
+#login {
+	width: 250px;
+	margin: 0 auto;
+	margin-top: 150px;
+}
