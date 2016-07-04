@@ -1,17 +1,16 @@
 <meta name=""charset="utf-8" content=""/>
 <?php
 session_start();
-if(isset($_GET['nn'])){
-$del = $_GET['nn'];
-$_SESSION['del']  =$del;
-$DefaultFriend = $_SESSION['Friend'];
-foreach($DefaultFriend as $key=>$friend)
-{
-if($friend['uName']==$del)
-{
+global $del;
+if (isset($_GET['nn'])) {
+	$del = $_GET['nn'];
 }
-?>
-<html>
+$_SESSION['del'] = $del;
+$DefaultFriend = $_SESSION['Friend'];
+foreach ($DefaultFriend as $key => $friend) {
+	if ($friend['uName'] == $del) {
+
+		echo '<html>
 	<head>
 		<title>
 		</title>
@@ -48,13 +47,13 @@ if($friend['uName']==$del)
 									姓名：
 								</td>
 								<td>
-									<input type="text" name="fname" id="" value="<?php echo $friend['uName'] ?>" />
+									<input type="text" name="fname" id="" value=' . $friend['uName'] . ' >
 								</td>
 								<td>
 									性别：
 								</td>
 								<td>
-									<input type="text" name="fsex" id="" value="<?php echo $friend['fSex'] ?>" />
+									<input type="text" name="fsex" id="" value=' . $friend['fSex'] . '>
 								</td>
 							</tr>
 							<tr>
@@ -62,13 +61,13 @@ if($friend['uName']==$del)
 									电话：
 								</td>
 								<td>
-									<input type="text" name="ftel" id="" value="<?php echo $friend['fTel'] ?>" />
+									<input type="text" name="ftel" id="" value=' . $friend['fTel'] . '>
 								</td>
 								<td>
 									地址：
 								</td>
 								<td>
-									<input type="text" name="fadress" id="" value="<?php echo $friend['fAdress'] ?>" />
+									<input type="text" name="fadress" id="" value=' . $friend['fAdress'] . ' >
 								</td>
 							</tr>
 							<tr>
@@ -76,13 +75,13 @@ if($friend['uName']==$del)
 									手机：
 								</td>
 								<td>
-									<input type="text" name="fmobile" id="" value="<?php echo $friend['fMobile'] ?>" />
+									<input type="text" name="fmobile" id="" value=' . $friend['fMobile'] . '>
 								</td>
 								<td>
 									公司名称：
 								</td>
 								<td>
-									<input type="text" name="fcompanyname" id="" value="<?php echo $friend['fCompanyName'] ?>" />
+									<input type="text" name="fcompanyname" id="" value=' . $friend['fCompanyName'] . ' >
 								</td>
 							</tr>
 							<tr>
@@ -90,13 +89,13 @@ if($friend['uName']==$del)
 									公司电话：
 								</td>
 								<td>
-									<input type="text" name="fcompanytel" id="" value="<?php echo $friend['fCompanyTel'] ?>" />
+									<input type="text" name="fcompanytel" id="" value=' . $friend['fCompanyTel'] . ' >
 								</td>
 								<td>
 									公司地址：
 								</td>
 								<td>
-									<input type="text" name="fcompanyaddress" id="" value="<?php echo $friend['fCompanyAddress'] ?>" />
+									<input type="text" name="fcompanyaddress" id="" value=' . $friend['fCompanyAddress'] . ' >
 								</td>
 							</tr>
 							<tr>
@@ -104,11 +103,11 @@ if($friend['uName']==$del)
 									关系：
 								</td>
 								<td>
-									<input type="text" name="fconnection" id="" value="<?php echo $friend['connection'] ?>" />
+									<input type="text" name="fconnection" id="" value=' . $friend['connection'] . '>
 								</td>
 							</tr>
 							<tr>
-								<td colspan="2" align= 'center'>
+								<td colspan="2" align= "center">
 									<input type="submit" name="" id="" value="更新" />
 								</td>
 							</tr>
@@ -135,9 +134,9 @@ if($friend['uName']==$del)
 			</div>
 		</div>
 	</body>
-</html>
-<?php
-}
+</html>';
+
+	}
 }
 ?>
 <script type="text/javascript">function denglu() {

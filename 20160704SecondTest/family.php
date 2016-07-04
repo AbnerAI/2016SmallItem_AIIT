@@ -23,23 +23,30 @@ if (isset($_GET['name'])) {
 		<div id="frame">
 			<div id="header">
 				<a>
-					家人
+					<a href="family.php?name=家人">
+						家人
+					</a>
 				</a>
 				<a>
-					领导
-				</a>
-				<a>
-					师长
-				</a>
-				<a>
-					朋友
-				</a>
-				<a>
-					同学
-				</a>
-				<a>
-					同事
-				</a>
+					<a href="family.php?name=领导">
+						领导
+					</a>
+					<a>
+						<a href="family.php?name=师长">
+							师长
+						</a>
+						<a>
+							<a href="family.php?name=朋友">
+								朋友
+							</a>
+							<a>
+								<a href="family.php?name=同学">
+									同学
+								</a>
+								<a>
+									<a href="family.php?name=同事">
+										同事
+									</a>
 			</div>
 			<div id="content">
 				<div id="MyConnection" style="width: 300px;margin: 0 auto;">
